@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    position: relative;
+    min-height: 100vh;
+    background-color:#557085;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: 0.5s;
+}
+.contact{
+    position: relative;
+    bottom: 30px;
+    width: 900px;
+    height: 500px;
+    background:#fff;
+    box-shadow: 0 15px 50px rgba( 0, 0, 0, 0.1);
+}
+.user-signupbx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.imgbox{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    transition: 0.5s;
+}
+.imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130%;
+    height: 108%;
+    object-fit: cover;
+}
+.formbx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: 0.5s;
+}
+.formbx h2{
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #555;
+}
+.formbx input{
+    position: relative;
+    left: 38px;
+    width: 78%;
+    padding: 10px;
+    background: #e0dcdc;
+    color: #333;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 1rem;
+    margin: 8px 0;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.formbx input[type="submit"]{
+    max-width: 100px;
+    background: #dd0e42;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.signup{
+    position: relative;
+    left: 38px;
+    margin-top: 10px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #555;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.signup a{
+    text-decoration: none;
+    color: #2171ad;
+}

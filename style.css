@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/*Navigation Bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+/*Navigation Bar: Logo and Image*/
+#logo{
+    margin: 10px 14px;
+}
+#logo img{
+    height: 50px;
+    width: 50px;
+}
+
+
+
+
+/*Navigation Bar: List Styling*/
+#navbar ul{
+    display: flex;
+    margin-bottom: 9px;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: black;
+}
+#navbar ul li a:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    transition: width .5s;
+}
+#navbar ul li a:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+
+
+
+
+
+/*Home Section*/
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: '';
+    position: absolute;
+    background:url('bg2.jpg') no-repeat center center/cover;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    filter: blur(5px);
+    
+}
+
+#home h1{
+    text-align: center;
+}
+#home p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/*Utility Classes*/
+.h-primary{
+    font-size: 3.8rem;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: rgb(2, 2, 2);
+}
+.h-secondary{
+    font-size: 2.9rem;
+    padding: 7px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#container{
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
+    
+.content{
+    width: 98vw;
+    height: 78vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider-wrapper{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 21px;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content a{
+    background: rgb(8, 173, 238);
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-top : 257px;
+    border-radius: 4px;
+    transition: ease-out 0.5s;
+    font-size: 1.3rem;
+    outline: none;
+    cursor: pointer;
+}
+.content a:hover{
+    box-shadow: inset 300px 0 0 0 #073750;
+}
+.slider{
+    position: relative;
+    top: 22px;
+    left: 337px;
+    height: 59px;
+    padding-left: 15px;
+    overflow: hidden;
+}
+.content h2{
+    display: flex;
+    position: relative;
+    top: 71px;
+    right: 180px;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.slider-wrapper h1{
+    position: relative;
+    top: 30px;
+    left: 328px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.9rem;
+}
+.slider div{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.9rem;
+    height: 50px;
+    margin-bottom: 2px 15px;
+    text-align: center;
+}
+.slider-text1{
+    animation: slide 8s linear infinite;
+    margin-bottom: 50px;
+}
+.slider-text2{
+    margin-bottom: 50px;
+}
+@keyframes slide{
+    0%{margin-top: -300px;}
+    5%{margin-top: -200px;}
+    33%{margin-top: -200px;}
+    38%{margin-top: -100px;}
+    66%{margin-top: -100px;}
+    71%{margin-top: 0px;}
+    100%{margin-top: 0px;}
+}
+
+#love{
+    height: 400px;
+}
+
+
+
+
+/*Our Picks Section*/
+.pick{
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.1rem;
+    font-weight: bold;
+    left: 60px;
+    color:black;
+    padding-top: 10px;
+   
+}
+.container{
+    position: relative;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 60px;
+}
+.imgbx img{
+    height: 260px;
+    width: 250px;
+}
+ .container .box{
+    position: relative;
+    width: 275px;
+    height: 289px;
+    overflow: hidden;
+    transition: 0.5s;
+    padding: 20px;
+}
+.container .box:hover{
+    z-index: 1;
+    transform: scale(1.08);
+    box-shadow: 0 25px 40px rgba(0,0,0,.5);
+}
+.container .box .imgbx::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    opacity: 0;
+    mix-blend-mode: multiply;
+    transition: 0.5s;
+}
+.container .box:hover .imgbx::before{
+    opacity: 1;
+}
+.container .box .title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    z-index: 1;
+    display: flex;
+    padding: 40px;
+    align-items: center;
+} 
+.title h2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+    position: relative;
+    top: 76px;
+    left: 54px;
+    font-family: 'Poppins', sans-serif;
+}
+.title2 h2{
+    font-size: 2rem;
+    position: relative;
+    bottom: 9px;
+    left: 45px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.this{
+    font-family: 'Roboto', sans-serif;
+    padding-left: 30px;
+    margin: 15px;
+    font-weight: bold;
+    font-size: 1.9rem;
+}
+
+/*About Me Section*/
+#clients-section{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    
+}
+.social-media{
+    padding: 34px;
+}
+#clients img{
+    position: relative;
+    top: 50px;
+    right: 77px;
+    height: 50px;
+    padding: 20px;
+    cursor: pointer;
+}
+.us{
+    height: 50px;
+    font-size: 2.7rem;
+    position: relative;
+    bottom: 50px;
+    left: 261px;
+    font-family: 'Poppins', sans-serif;
+}
+#clients-section::before{
+    content: '';
+    position: absolute;
+    background:url('contact.jpg') no-repeat center center/cover;
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    filter: blur(5px);
+}
